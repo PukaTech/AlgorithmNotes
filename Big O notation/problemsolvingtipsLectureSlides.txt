@@ -1,0 +1,118 @@
+How to improve problem solving:
+1. Devise a plan for solving problems
+2. Master common problem solving patterns
+
+
+Plan Solving tips:
+1.understand the problem
+2.explore concrete examples
+3.break it down
+4.solve/simplify
+5.look back and refactor
+
+
+setp 1. understanding the problem:
+a. say the problem in your own words
+b. what are the inputs that go into the problem?
+c. what are the outputs that should come from the solution to the problem?
+d. can the outputs be determined from the inputs? in other words, do i have enough information to solve
+the problem?( you may not be able to answer this question until you set
+about  solving the problem. that is okay; it's still worth considering the question
+at this early stage.)
+e.how should I label the important peices of data that are a part of the problem
+
+example using step 1:
+write a function which takes two numbers and returns their sum.(hint use the understanding the problem)
+1. write a function that adds two numbers.
+2. two numbers: ints?, floats? other types?
+3. a number: ints?, floats? other types?
+4. we can label the first number as num1 and the second number as num2
+
+
+step2: explore concrete examples
+coming up with examples can help you understand the problem better
+examples also provide sanity checks that eventual solution works how it should
+ similar to "user stories", "unit tests"
+
+ 1. start with simple examples
+ 2. progress to more complex examples
+ 3. explore examples with empty inputs
+ 4. explore examples with invalid inputs
+
+ example using the step 2: 
+ write a function which takes in  a string and returns counts of each character in the string.
+
+example 1 (simple): charcount('aaaa') //should return a:4
+example 2 (more complex): charcount('hello') //should return {h:1,e:1,l:2,o:1}
+example 3 (empty): charcount()
+example 3 (invalid): charcount(3131) 
+
+
+step 3: break it down:
+write out the steps you need to take before writing any code
+this forces you to think about the code you will write  before you write it,
+and helps you catch any lingering cinceptual issues or missunderstanding 
+before you dive in and have to worry about details (and syntax)
+
+example using the step 3:
+write a function which takes in  a string and returns counts of each character in the string.
+
+function charcount(str){
+    //make object to return at end
+    //loop over string for each character ..
+        //if the char is a number/letter AND  key in object , add one to count
+        //if char is number/letter AND not in object, add it and set value to 1
+        //if char is  something else( space, period , etc) , don't do anything
+
+
+    //return object
+}
+
+step 4: solve/simplify
+solve the problem  
+IF YOU CAN't
+SOLVE  A SIMPLER PROBLEM
+simplify:
+a. find the core difficulty in what you are trying to do
+b. temporarily ignore that difficulty
+c. write a simplified solution
+d. then incorporate that difficulty back in
+
+example using the step 4:
+write a function which takes in  a string and returns counts of each character in the string.
+
+function charcount(str){
+    //make object to return at end
+    var result = {}
+    //loop over string for each character ..
+    for (var i; i< str.length; i++){
+
+        var char = str[i];
+//if the char is a number/letter AND  key in object , add one to count
+
+        if (result[char] > 0){
+            result[char]++ 
+        }
+                //if char is number/letter AND not in object, add it and set value to 1
+
+        else{
+            result[char]=1
+        }
+    }
+    return result;
+    
+                //if char is  something else( space, period , etc) , don't do anything
+
+
+    //return object
+}
+
+step5: look back and refactor
+refactoring questions:
+can you check the result?
+can you derive the result differently?
+can you understand it at a glance?
+can you use the result or method for some other problem?
+can you improve the performance of your solution?
+can you think of other ways to refactor?
+how have other people solved this problem?

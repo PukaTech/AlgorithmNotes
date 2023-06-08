@@ -1,0 +1,24 @@
+
+To improve problem-solving skills, follow these steps:
+
+Devise a plan for solving problems.
+Understand the problem.
+Explore concrete examples.
+Break it down into smaller steps.
+Solve or simplify each step.
+Look back and refactor your solution.
+Example: Write a function that adds two numbers.
+
+Understand the problem: The function should take two numbers as inputs and return their sum.
+Explore concrete examples: For example, add(3, 5) should return 8.
+Break it down:
+Create a function that takes two number parameters.
+Add the two numbers together.
+Return the sum.
+Solve/simplify: Write the code for adding the numbers and returning the sum.
+Look back and refactor: Review your solution, test it with different inputs, and consider ways to improve it. Also, learn from other people's approaches to similar problems.
+By following these steps, you can enhance your problem-solving abilities.
+
+
+
+
